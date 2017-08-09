@@ -3,9 +3,56 @@
     <head>
         <title>Gridstack</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.0/jquery-ui.js"></script>
+
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-amber.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style type="text/css">
+            .w3-card-4 p {
+                background-color: aliceblue;
+            }
+            .w3-theme, .w3-theme-d1 {
+                background-color: #2196f3! important;
+            }
+            .card-hover:hover {
+                opacity: 0.8;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                $(".float").click(function(){
+                    window.location.href = "src/float.html";
+                });
+                $(".anijs").click(function(){
+                    window.location.href = "src/anijs.html";
+                });
+                $(".knockout-2").click(function(){
+                    window.location.href = "src/knockout2.html";
+                });
+                $(".knockout").click(function(){
+                    window.location.href = "src/knockout.html";
+                });
+                $(".nested").click(function(){
+                    window.location.href = "src/nested.html";
+                });
+                $(".responsive").click(function(){
+                    window.location.href = "src/responsive.html";
+                });
+                $(".rtl").click(function(){
+                    window.location.href = "src/rtl.html";
+                });
+                $(".serialization").click(function(){
+                    window.location.href = "src/serialization.html";
+                });
+                $(".two-grid").click(function(){
+                    window.location.href = "src/two.html";
+                });
+            });
+        </script>
     </head>
     <body>
 
@@ -23,64 +70,114 @@
             <div class="w3-quarter">
                 <div class="w3-bar w3-xlarge">
                     <a href="#" class="w3-bar-item w3-button w3-left"><i class="fa fa-search"></i></a>
-                    <a href="#" class="w3-bar-item w3-button w3-right"><img class="w3-hide-small w3-circle" src="img_avtar.jpg" style="height:40px;"></a>
+                    <a href="http://big-silver.github.io" class="w3-bar-item w3-button w3-right"><img class="w3-hide-small w3-circle" src="src/img/float.png" style="height:40px;"></a>
                 </div>
 
             </div>
         </div>
 
         <div class="w3-container w3-padding-32 w3-theme-d1">
-            <h1>Places to Visit</h1>
+            <h1>Gridstack</h1>
         </div>
 
         <div class="w3-row-padding w3-theme">
             <div class="w3-third w3-section">
-                <div class="w3-card-4">
-                    <img src="img_5terre.jpg" style="width:100%">
+                <div class="w3-card-4 float card-hover">
+                    <img src="src/img/float.png" style="width:100%; height: 300px">
                     <div class="w3-container w3-white">
-                        <h4>Cinque Terre</h4>
-                        <p>The Cinque Terre (five lands) is a portion of the Italian Riviera. The coastline with five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore
-                        is a UNESCO World Heritage Site.</p>
+                        <h4>Float Grid Demo</h4>
+                        <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column grid. It allows you to build draggable responsive bootstrap v3 friendly layouts. It also works great with knockout.js and touch devices. Inspired by gridster.js. Built with love.</p>
                     </div>
                 </div>
             </div>
 
             <div class="w3-third w3-section">
-                <div class="w3-card-4">
-                    <img src="img_monterosso.jpg" style="width:100%">
+                <div class="w3-card-4 knockout card-hover">
+                    <img src="src/img/knockout.png" style="width:100%; height: 300px">
                     <div class="w3-container w3-white">
-                        <h4>Monterosso</h4>
-                        <p>Monterosso al Mare is located at the center of a small natural gulf, protected by a small artificial reef,
-                        in the Riviera of La Spezia. It is the northernmost village of the Cinque Terre.</p>
+                        <h4>Knockout.js Demo</h4>
+                        <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column grid. It allows you to build draggable responsive bootstrap v3 friendly layouts. It also works great with knockout.js and touch devices. Inspired by gridster.js. Built with love.</p>
                     </div>
                 </div>
             </div>
 
             <div class="w3-third w3-section">
-                <div class="w3-card-4">
-                    <img src="img_vernazza.jpg" style="width:100%">
+                <div class="w3-card-4 knockout-2 card-hover">
+                    <img src="src/img/knockout-2.png" style="width:100%; height: 300px">
                     <div class="w3-container w3-white">
-                        <h4>Vernazza</h4>
-                        <p>Vernazza is another of the five towns in the region. Vernazza is the fourth town heading north. It has no car traffic, and is one of the truest
-                        "fishing villages" on the Italian Riviera.
+                        <h4>Knockout.js Demo(2)</h4>
+                         <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column grid. It allows you to build draggable responsive bootstrap v3 friendly layouts. It also works great with knockout.js and touch devices. Inspired by gridster.js. Built with love.</p>
+                    </div>
+                </div>
+                <br><br><br>
+            </div>
+        </div>
+        <div class="w3-row-padding w3-theme">
+            <div class="w3-third w3-section">
+                <div class="w3-card-4 nested card-hover">
+                    <img src="src/img/nested.png" style="width:100%; height: 300px">
+                    <div class="w3-container w3-white">
+                        <h4>Nested Grids Demo</h4>
+                        <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column grid. It allows you to build draggable responsive bootstrap v3 friendly layouts. It also works great with knockout.js and touch devices. Inspired by gridster.js. Built with love.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-section">
+                <div class="w3-card-4 responsive card-hover">
+                    <img src="src/img/responsive.png" style="width:100%; height: 300px">
+                    <div class="w3-container w3-white">
+                        <h4>Resize Grid (responsive) Demo</h4>
+                        <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column grid. It allows you to build draggable responsive bootstrap v3 friendly layouts. It also works great with knockout.js and touch devices. Inspired by gridster.js. Built with love.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-section">
+                <div class="w3-card-4 rtl card-hover">
+                    <img src="src/img/rtl.png" style="width:100%; height: 300px">
+                    <div class="w3-container w3-white">
+                        <h4>RTL Demo</h4>
+                        <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column grid. It allows you to build draggable responsive bootstrap v3 friendly layouts. It also works great with knockout.js and touch devices. Inspired by gridster.js. Built with love.</p>
+                    </div>
+                </div>
+                <br><br><br>
+            </div>
+        </div>
+        <div class="w3-row-padding w3-theme">
+            <div class="w3-third w3-section card-hover">
+                <div class="w3-card-4 serialization">
+                    <img src="src/img/serialization.png" style="width:100%; height: 300px">
+                    <div class="w3-container w3-white">
+                        <h4>Serialization Demo</h4>
+                         <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column grid. It allows you to build draggable responsive bootstrap v3 friendly layouts. It also works great with knockout.js and touch devices. Inspired by gridster.js. Built with love.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-section">
+                <div class="w3-card-4 two-grid card-hover">
+                    <img src="src/img/two-grid.png" style="width:100%; height: 300px">
+                    <div class="w3-container w3-white">
+                        <h4>Two Grids Demo</h4>
+                        <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column grid. It allows you to build draggable responsive bootstrap v3 friendly layouts. It also works great with knockout.js and touch devices. Inspired by gridster.js. Built with love.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-section">
+                <div class="w3-card-4 anijs card-hover">
+                    <img src="src/img/anijs.png" style="width:100%; height: 300px">
+                    <div class="w3-container w3-white">
+                        <h4>AniJS Demo</h4>
+                        <p>gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column grid. It allows you to build draggable responsive bootstrap v3 friendly layouts. It also works great with knockout.js and touch devices. Inspired by gridster.js. Built with love.</p>
                     </div>
                 </div>
                 <br><br><br>
             </div>
         </div>
         <div class="w3-container w3-theme-d4">
-            <p class="w3-large">Europe Italy</p>
+            <p class="w3-large">Big-Silver</p>
         </div>
-        <!-- <ul>
-            <li><a href="src/float.html">Float grid demo</a></li>
-            <li><a href="src/knockout.html">Knockout.js demo</a></li>
-            <li><a href="src/knockout2.html">Knockout.js demo (2)</a></li>
-            <li><a href="src/nested.html">Nested grids demo</a></li>
-            <li><a href="src/rtl.html">RTL demo</a></li>
-            <li><a href="src/serialization.html">Serialization demo</a></li>
-            <li><a href="src/two.html">Two grids demo</a></li>
-            <li><a href="src/responsive.html">Resize grid (responsive) demo</a></li>
-            <li><a href="src/anijs.html">AniJS demo</a></li>
-        </ul> -->
     </body>
 </html>
