@@ -17,7 +17,6 @@ Join gridstack.js on Slack: https://gridstackjs.troolee.com
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [gridstack.js News](#gridstackjs-news)
-- [Demo and examples](#demo-and-examples)
 - [Usage](#usage)
   - [Requirements](#requirements)
       - [Using gridstack.js with jQuery UI](#using-gridstackjs-with-jquery-ui)
@@ -44,12 +43,6 @@ gridstack.js News
 
 Version 1.0 is coming! Check out the blog post here for more information:
 [https://dylandreams.com/2017/04/26/gridstack-10-coming-soon/](https://dylandreams.com/2017/04/26/gridstack-10-coming-soon/) and [subscribe to the blog](https://dylandreams.com) for more gridstack news and tutorials.
-
-
-Demo and examples
-====
-
-Please visit http://troolee.github.io/gridstack.js/ for a demo or check out [these examples](http://troolee.github.io/gridstack.js/demo/).
 
 
 Usage
