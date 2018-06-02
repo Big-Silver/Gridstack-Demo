@@ -59,7 +59,6 @@
             var self = this;
             this.grid = $('.grid-stack').data('gridstack');
             $('.grid-stack').on('added', function(event, items) {
-                // add anijs data to gridstack item
                 for (var i = 0; i < items.length; i++) {
                     $(items[i].el[0]).attr('data-anijs', 'if: added, do: swing animated, after: $removeAnimations, on: $gridstack');
                 }
